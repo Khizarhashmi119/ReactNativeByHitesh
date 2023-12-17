@@ -10,7 +10,7 @@ type Props = {
   handlePressGridItem: (gridNumber: keyof TTicTacToeGameState) => void;
 };
 
-const GridItem = (props: Props): JSX.Element => {
+const GridItem = (props: Props): React.JSX.Element => {
   const { gridNumber, player, handlePressGridItem } = props;
 
   return (

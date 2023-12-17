@@ -21,7 +21,7 @@ type TFormState = {
   passwordLengthErrorMessage: string;
 };
 
-const PasswordGenerator = () => {
+const PasswordGenerator = (): React.JSX.Element => {
   const [formState, setFormState] = useState<TFormState>({
     isDigitsIncluded: false,
     isLowerCaseCharsIncluded: true,

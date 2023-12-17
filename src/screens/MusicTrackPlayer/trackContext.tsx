@@ -11,7 +11,7 @@ const TrackContext = createContext<{
 
 type Props = PropsWithChildren<{}>;
 
-export const TrackContextProvider = (props: Props): JSX.Element => {
+export const TrackContextProvider = (props: Props): React.JSX.Element => {
   const { children } = props;
 
   const [activeTrack, setActiveTrack] = useState<Track | null | undefined>(

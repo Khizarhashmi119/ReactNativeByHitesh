@@ -9,7 +9,7 @@ type Props = PropsWithChildren<{
   setCurrency: (currency: Currency) => void;
 }>;
 
-const CurrencyButton = (props: Props): JSX.Element => {
+const CurrencyButton = (props: Props): React.JSX.Element => {
   const { currency, index, totalNoOfCurrency, setCurrency } = props;
   const { flag, name } = currency;
 

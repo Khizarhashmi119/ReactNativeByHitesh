@@ -10,7 +10,7 @@ import {
 
 import { globalStyles } from '../../styles/globalStyles';
 
-const Tut01 = () => {
+const Tut01 = (): React.JSX.Element => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (

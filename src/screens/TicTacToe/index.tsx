@@ -19,7 +19,7 @@ const initTicTacToeGameState: TTicTacToeGameState = {
   9: null,
 };
 
-const TicTacToe = () => {
+const TicTacToe = (): React.JSX.Element => {
   const [playerState, setPlayerState] = useState<TPlayerState>('O');
   const [ticTacToeGame, setTicTacToeGame] = useState<TTicTacToeGameState>(
     initTicTacToeGameState,

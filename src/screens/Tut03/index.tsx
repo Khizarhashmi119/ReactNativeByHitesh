@@ -32,7 +32,7 @@ const getUser = async () => {
   }
 };
 
-const Tut03 = () => {
+const Tut03 = (): React.JSX.Element => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const [users, setUsers] = useState<TUser[]>([]);

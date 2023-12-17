@@ -10,7 +10,7 @@ import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 
 import PlaylistModal from './PlaylistModal';
 
-const ControlCenter = (): JSX.Element => {
+const ControlCenter = (): React.JSX.Element => {
   const playbackState = usePlaybackState();
   const { duration, position } = useProgress();
 

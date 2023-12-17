@@ -13,7 +13,7 @@ import {
 import { TAppParamList } from '../../AppParamList';
 import { BUTTONS } from '../../constants';
 
-const Home = () => {
+const Home = (): React.JSX.Element => {
   const navigate = useNavigation<NativeStackNavigationProp<TAppParamList>>();
 
   return (

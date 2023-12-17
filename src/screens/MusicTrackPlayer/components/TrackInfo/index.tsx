@@ -4,7 +4,7 @@ import { useProgress } from 'react-native-track-player';
 
 import { useActiveTrack } from '../../trackContext';
 
-const TrackInfo = (): JSX.Element => {
+const TrackInfo = (): React.JSX.Element => {
   const { activeTrack } = useActiveTrack();
   const { duration, position } = useProgress();
 

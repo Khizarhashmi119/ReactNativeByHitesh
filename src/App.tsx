@@ -11,7 +11,7 @@ import { BUTTONS } from './constants';
 
 const Stack = createNativeStackNavigator<TAppParamList>();
 
-const App = (): JSX.Element => {
+const App = (): React.JSX.Element => {
   return (
     <GestureHandlerRootView style={styles.container}>
       <NavigationContainer>

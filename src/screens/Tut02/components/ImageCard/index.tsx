@@ -15,7 +15,7 @@ interface Props {
   uri: string;
 }
 
-const ImageCard = (props: Props): JSX.Element => {
+const ImageCard = (props: Props): React.JSX.Element => {
   const { title, uri } = props;
 
   const openUrl = (url: string) => Linking.openURL(url);

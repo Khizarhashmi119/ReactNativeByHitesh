@@ -12,7 +12,7 @@ import CurrencyButton from './components/CurrencyButton';
 
 import { CURRENCIES } from './constants';
 
-const CurrencyConvertor = () => {
+const CurrencyConvertor = (): React.JSX.Element => {
   const [amount, setAmount] = useState('');
   const [targetCurrency, setTargetCurrency] = useState<Currency>(CURRENCIES[1]);
   const [resultantAmount, setResultantAmount] = useState('');

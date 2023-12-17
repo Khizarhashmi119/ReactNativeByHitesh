@@ -15,7 +15,7 @@ type Props = {
   track: Track;
 };
 
-const PlaylistItem = (props: Props): JSX.Element => {
+const PlaylistItem = (props: Props): React.JSX.Element => {
   const { index, track } = props;
   const { artwork, title, artist } = track;
 

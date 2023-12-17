@@ -11,7 +11,7 @@ import TrackInfo from './components/TrackInfo';
 import { addTracks, setupPlayer } from './services/playbackService';
 import { useActiveTrack } from './trackContext';
 
-const MusicTrackPlayer = () => {
+const MusicTrackPlayer = (): React.JSX.Element => {
   const [isPlayerReady, setIsPlayerReady] = useState(false);
   const { activeTrack, setActiveTrack } = useActiveTrack();
 

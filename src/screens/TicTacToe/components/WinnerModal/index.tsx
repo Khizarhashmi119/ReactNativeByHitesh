@@ -25,7 +25,7 @@ type Props = {
   handleClickCloseWinnerModal: () => void;
 };
 
-const WinnerModal = (props: Props): JSX.Element => {
+const WinnerModal = (props: Props): React.JSX.Element => {
   const {
     isModalOpen,
     winner,

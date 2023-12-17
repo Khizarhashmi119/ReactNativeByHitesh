@@ -14,7 +14,7 @@ interface Props {
   cardNo: number;
 }
 
-const FlatCard = (props: Props): JSX.Element => {
+const FlatCard = (props: Props): React.JSX.Element => {
   const { backgroundColor, cardNo } = props;
 
   const isDarkMode = useColorScheme() === 'dark';

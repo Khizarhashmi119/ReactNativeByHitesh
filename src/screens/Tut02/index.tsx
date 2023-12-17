@@ -17,7 +17,7 @@ import { globalStyles } from '../../styles/globalStyles';
 
 const FLAT_CARDS = ['#ee3636', '#5a44db', '#f06a10', '#999842', '#ccccdd'];
 
-const Tut02 = () => {
+const Tut02 = (): React.JSX.Element => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (

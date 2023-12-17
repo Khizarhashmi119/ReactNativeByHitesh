@@ -32,7 +32,7 @@ const options = {
   ignoreAndroidSystemSettings: false,
 };
 
-const RollTheDice = () => {
+const RollTheDice = (): React.JSX.Element => {
   const [dice, setDice] = useState(6);
 
   const handlePressRoll = () => {

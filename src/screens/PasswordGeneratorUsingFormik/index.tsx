@@ -28,7 +28,7 @@ const ValuesValidationSchema = yup.object().shape({
     .required('Length is required'),
 });
 
-const PasswordGeneratorUsingFormik = () => {
+const PasswordGeneratorUsingFormik = (): React.JSX.Element => {
   const [password, setPassword] = useState('');
 
   const initValues: TValues = {

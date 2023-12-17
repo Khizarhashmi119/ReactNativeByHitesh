@@ -10,7 +10,7 @@ import Icon from 'react-native-vector-icons/FontAwesome6';
 
 type Props = PressableProps & {};
 
-const ReloadButton = (props: Props): JSX.Element => {
+const ReloadButton = (props: Props): React.JSX.Element => {
   const { ...otherProps } = props;
 
   return (

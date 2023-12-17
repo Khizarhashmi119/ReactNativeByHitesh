@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-const Animation = () => {
+const Animation = (): React.JSX.Element => {
   const animation = useRef(new Animated.Value(0)).current;
 
   const [isButtonClicked, setIsButtonClicked] = useState(false);

@@ -9,7 +9,7 @@ type Props = {
   closeModal: () => void;
 };
 
-const PlaylistModal = (props: Props): JSX.Element => {
+const PlaylistModal = (props: Props): React.JSX.Element => {
   const { closeModal, isPlaylistModalOpen } = props;
 
   const [playlist, setPlaylist] = useState<Track[]>([]);

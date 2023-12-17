@@ -9,7 +9,7 @@ interface Props {
   totalNoOfUser: number;
 }
 
-const UserCard = (props: Props): JSX.Element => {
+const UserCard = (props: Props): React.JSX.Element => {
   const { index, user, totalNoOfUser } = props;
   const { name, picture } = user;
 

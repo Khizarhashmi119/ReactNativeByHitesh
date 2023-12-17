@@ -8,7 +8,7 @@ interface Props {
   user: TUser;
 }
 
-const User = (props: Props): JSX.Element => {
+const User = (props: Props): React.JSX.Element => {
   const { user } = props;
   const { name, picture } = user;
 
