@@ -8,6 +8,7 @@ import {
   GestureHandlerRootView,
 } from 'react-native-gesture-handler';
 import Animated, {
+  runOnJS,
   useAnimatedStyle,
   useSharedValue,
 } from 'react-native-reanimated';
@@ -39,7 +40,8 @@ const WinnerModal = (props: Props): React.JSX.Element => {
     .direction(Directions.DOWN)
     .onStart(() => {
       height.value = 0;
-      handleClickCloseWinnerModal();
+      runOnJS(handlePressReload)();
+      runOnJS(handleClickCloseWinnerModal)();
     });
 
   const winnerContainerStyle = useAnimatedStyle(() => ({

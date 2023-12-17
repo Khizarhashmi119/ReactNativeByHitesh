@@ -113,12 +113,14 @@ const TicTacToe = (): React.JSX.Element => {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#fff5e0" />
-      <WinnerModal
-        winner={winner}
-        handlePressReload={handlePressReload}
-        handleClickCloseWinnerModal={handleClickCloseWinnerModal}
-        isModalOpen={isWinnerModalOpen}
-      />
+      {isWinnerModalOpen && (
+        <WinnerModal
+          winner={winner}
+          handlePressReload={handlePressReload}
+          handleClickCloseWinnerModal={handleClickCloseWinnerModal}
+          isModalOpen={isWinnerModalOpen}
+        />
+      )}
       <View style={styles.main}>
         {!Object.values(ticTacToeGame).every((value) => value) && !winner && (
           <Text
